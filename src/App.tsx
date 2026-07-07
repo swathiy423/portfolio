@@ -14,7 +14,6 @@ const Contact = lazy(() => import('./pages/Contact'))
 
 // Lazy load below-the-fold components for better initial load
 const Projects = lazy(() => import('./components/section/Projects'))
-const Experience = lazy(() => import('./components/section/Experience'))
 const Skills = lazy(() => import('./components/section/Skills'))
 const Certifications = lazy(() => import('./components/section/Certifications'))
 const Footer = lazy(() => import('./components/Footer'))
@@ -29,15 +28,12 @@ function HomePage() {
       <Suspense fallback={<div className="h-screen flex items-center justify-center">Loading...</div>}>
         <Projects />
       </Suspense>
-      <Suspense fallback={<div className="h-64 flex items-center justify-center">Loading...</div>}>
-        <Experience />
-      </Suspense>
       {/* Divider with gradient transitions */}
       <div className="w-full py-8 relative" style={{
         background: isDarkMode ? themeColors.background.gradientEnd : colors.white,
         transition: 'background 0.3s ease-in-out'
       }}>
-        {/* Top gradient overlay to blend with Experience section */}
+        {/* Top gradient overlay to blend with previous section */}
         <div
           className="absolute top-0 left-0 right-0 pointer-events-none"
           style={{
