@@ -227,40 +227,41 @@ const Projects = () => {
   }, [draggedStar]);
 
   // project data - these are the main cards
-  const projects = [
+ const projects = [
     {
-      title: "Project One",
-      description: "A brief description of your first project. Highlight the key features and what makes it unique.",
-      technologies: ["React", "TypeScript", "Node.js", "MongoDB"],
-      icon: comingSoon,
-      detailsUrl: "/projects/project-one",
-      githubUrl: socialLinks.repositories.projectOne
+      title: "BookNest",
+      description: "A reading-community platform with a personal digital library, immersive virtual reading rooms, and a book club module with a peer-to-peer book exchange marketplace.",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "Tailwind CSS"],
+      icon: comingSoon, // replace with your own icon image if you have one
+      detailsUrl: "/projects/booknest",
+      githubUrl: "https://github.com/swathiy423" // update to actual repo if separate
     },
     {
-      title: "Project Two",
-      description: "A brief description of your second project. Highlight the key features and what makes it unique.",
-      technologies: ["Python", "Flask", "PostgreSQL", "Docker"],
+      title: "Nexus — AI Ops Console",
+      description: "A full-stack AI operations platform with secure auth, role-based access control, and a Claude-powered in-app assistant using RAG with persistent per-user memory.",
+      technologies: ["Next.js 14", "TypeScript", "PostgreSQL/Prisma", "NextAuth", "Anthropic API", "Docker"],
       icon: comingSoon,
-      detailsUrl: "/projects/project-two",
-      githubUrl: socialLinks.repositories.projectTwo
+      detailsUrl: "/projects/nexus",
+      githubUrl: "https://github.com/swathiy423"
     },
     {
-      title: "Project Three",
-      description: "A brief description of your third project. Highlight the key features and what makes it unique.",
-      technologies: ["JavaScript", "Express", "AWS", "Tailwind CSS"],
+      title: "Digital Fraud Prevention App",
+      description: "An e-commerce fraud-detection prototype combining ML-based anomaly detection with behavioral analysis and authenticated return-request tracking.",
+      technologies: ["React", "Node.js", "Python", "Firebase", "ML Anomaly Detection"],
       icon: comingSoon,
-      detailsUrl: "/projects/project-three",
-      githubUrl: socialLinks.repositories.projectThree
+      detailsUrl: "/projects/fraud-prevention",
+      githubUrl: "https://github.com/swathiy423"
     },
     {
-      title: "Project Four",
-      description: "A brief description of your fourth project. Highlight the key features and what makes it unique.",
-      technologies: ["C++", "CMake", "OpenGL"],
+      title: "Marketing Command Center",
+      description: "A unified digital marketing dashboard auto-calculating CTR, CPC, CPA, and ROAS across six channels, with an SEO rank tracker.",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Chart.js"],
       icon: comingSoon,
-      detailsUrl: "/projects/project-four",
-      githubUrl: socialLinks.repositories.projectFour
+      detailsUrl: "/projects/marketing-command-center",
+      githubUrl: "https://github.com/swathiy423"
     }
   ];
+      
 
   // Calculate carousel pagination
   const totalPages = Math.ceil(projects.length / projectsPerPage);
