@@ -1,75 +1,76 @@
 import { useDarkMode } from '../../contexts/DarkModeContext';
 import { useThemeColors } from '../../hooks/useThemeColors';
-import awsCloudFoundationsBadge from '../../assets/badges/AWS_cloud_foundations_badge.webp';
-import awsCloudPractitionerBadge from '../../assets/badges/AWS_cloud_practitioner_badge.webp';
-import citiLogo from '../../assets/badges/citi_logo.webp';
-
+import googleDigitalMarketingBadge from '../../assets/badges/google_digital_marketing_badge.webp';
+import googlePMBadge from '../../assets/badges/google_pm_badge.webp';
+import ibmLogo from '../../assets/badges/ibm_logo.webp';
+import vtricksLogo from '../../assets/badges/vtricks_logo.webp';
 const Certifications = () => {
   const { isDarkMode } = useDarkMode();
   const themeColors = useThemeColors();
 
   const badges = [
     {
-      id: 'aws-cloud-foundations',
-      image: awsCloudFoundationsBadge,
-      alt: 'AWS Academy Cloud Foundations Badge',
-      title: 'AWS Academy Cloud Foundations',
-      subtitle: 'Academy Graduate',
-      credentialUrl: 'https://www.credly.com/badges/your-credential-id/public_url',
+      id: 'google-digital-marketing',
+      image: googleDigitalMarketingBadge, // add this image + import at top
+      alt: 'Google Digital Marketing & E-commerce Badge',
+      title: 'Google Digital Marketing & E-commerce',
+      subtitle: 'Google',
+      credentialUrl: '', // add your credential link if you have one
       status: 'completed'
     },
     {
-      id: 'aws-cloud-practitioner',
-      image: awsCloudPractitionerBadge,
-      alt: 'AWS Cloud Practitioner Badge',
-      title: 'AWS Certified Cloud Practitioner',
-      subtitle: 'Amazon Web Services',
-      credentialUrl: 'https://www.credly.com/badges/your-credential-id/public_url',
+      id: 'google-project-management',
+      image: googlePMBadge,
+      alt: 'Introduction to Project Management Badge',
+      title: 'Introduction to Project Management',
+      subtitle: 'Google',
+      credentialUrl: '',
       status: 'completed'
     }
   ];
 
   const credentials = [
     {
-      id: 'citi-human-subjects',
-      image: citiLogo,
-      alt: 'CITI Program Logo',
-      title: 'Social / Behavioral Research Investigator',
-      subtitle: 'Human Subjects Research',
-      issuer: 'CITI Program',
-      issued: 'Sep 2023',
-      expires: 'Sep 2026',
-      credentialId: '00000000',
-      credentialUrl: 'https://www.citiprogram.org/verify/?your-credential-id',
+      id: 'ibm-project-initiation',
+      image: ibmLogo,
+      alt: 'IBM Logo',
+      title: 'Project Initiation: Starting a Successful Project',
+      subtitle: 'Project Management',
+      issuer: 'IBM',
+      issued: '',
+      expires: '',
+      credentialId: '',
+      credentialUrl: '',
       status: 'completed'
     },
     {
-      id: 'citi-hipaa',
-      image: citiLogo,
-      alt: 'CITI Program Logo',
-      title: 'Research and HIPAA Privacy Protections',
-      subtitle: 'Human Research',
-      issuer: 'CITI Program',
-      issued: 'Sep 2023',
-      expires: 'Sep 2026',
-      credentialId: '00000000',
-      credentialUrl: 'https://www.citiprogram.org/verify/?your-credential-id',
+      id: 'ibm-design-thinking',
+      image: ibmLogo,
+      alt: 'IBM Logo',
+      title: 'Enterprise Design Thinking Practitioner',
+      subtitle: 'Design Thinking',
+      issuer: 'IBM',
+      issued: '',
+      expires: '',
+      credentialId: '',
+      credentialUrl: '',
       status: 'completed'
     },
     {
-      id: 'citi-gcp',
-      image: citiLogo,
-      alt: 'CITI Program Logo',
-      title: 'Investigational Drugs and Medical Devices',
-      subtitle: 'Good Clinical Practice',
-      issuer: 'CITI Program',
-      issued: 'Nov 2025',
-      expires: 'Nov 2028',
-      credentialId: '00000000',
-      credentialUrl: 'https://www.citiprogram.org/verify/?your-credential-id',
+      id: 'vtricks-database',
+      image: vtricksLogo,
+      alt: 'Vtricks Technologies Logo',
+      title: 'Unstructured Database Design and Management',
+      subtitle: 'Database Management',
+      issuer: 'Vtricks Technologies',
+      issued: '',
+      expires: '',
+      credentialId: '',
+      credentialUrl: '',
       status: 'completed'
     }
   ];
+     
 
   return (
     <section id="certifications" className="py-8 relative" style={{
